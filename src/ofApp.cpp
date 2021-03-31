@@ -31,6 +31,7 @@ void ofApp::draw(){
     float angle = time*10;
     
     cam.begin();
+
     ofPushMatrix();
     ofTranslate( 0, 0, 0 );
     
@@ -42,6 +43,7 @@ void ofApp::draw(){
     ofRotate( angle, 0, 1, 0 );
     flocker.draw();
     ofPopMatrix();
+    
     cam.end();
 
 }
